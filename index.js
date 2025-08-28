@@ -14,7 +14,7 @@ const massEl = document.querySelector(".mass");
 // meter to feet
 function meterToFeet() {
   const inputValue = Number(inputEl.value);
-  if (!inputValue) {
+  if (isNaN(inputValue) || inputEl.value === "") {
     return;
   } else {
     let meter = 3.281;
@@ -32,7 +32,7 @@ function meterToFeet() {
 function literToGallon() {
   const inputValue = Number(inputEl.value);
 
-  if (!inputValue) {
+  if (isNaN(inputValue) || inputEl.value === "") {
     return;
   } else {
     let liter = 0.264;
@@ -49,7 +49,7 @@ function literToGallon() {
 // kg to pounds
 function kgToPounds() {
   const inputValue = Number(inputEl.value);
-  if (!inputValue) {
+  if (isNaN(inputValue) || inputEl.value === "") {
     return;
   } else {
     let kilogram = 2.204;
